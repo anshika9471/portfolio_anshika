@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#74ebd5,#acb6e5);
+  font-family:Arial, sans-serif;
+}
+
+/* Card */
+.card{
+  background:white;
+  width:320px;
+  text-align:center;
+  border-radius:20px;
+  padding:30px 20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Profile Image */
+.profile-img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:4px solid #6c63ff;
+}
+
+/* Name */
+h2{
+  margin:10px 0 5px;
+}
+
+/* Designation */
+.designation{
+  color:#6c63ff;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+/* Bio */
+.bio{
+  font-size:14px;
+  color:#555;
+  margin-bottom:20px;
+}
+
+/* Social Icons */
+.social a{
+  text-decoration:none;
+  margin:0 10px;
+  font-size:22px;
+  color:#40e67f;
+  transition:color 0.3s;
+}
+
+.social a:hover{
+  color:#e2f01e;
+}
+
+/* Responsive */
+@media(max-width:400px){
+  .card{
+    width:90%;
+    padding:25px 15px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- PROFILE IMAGE -->
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/038/974/578/small/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg" class="profile-img" alt="Profile">
+
+  <!-- NAME -->
+  <h2>Anshika Agarwal</h2>
+
+  <!-- DESIGNATION -->
+  <div class="designation">Web Developer</div>
+
+  <!-- BIO -->
+  <p class="bio">
+    Passionate coder who loves creating modern websites and solving real-world problems with technology.
+  </p>
+
+  <!-- SOCIAL ICONS -->
+  <div class="social">
+    <a href="#">🌐</a>
+    <a href="#">📷</a>
+  </div>
+
+</div>
+
+</body>
+</html>
